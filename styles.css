@@ -1,0 +1,548 @@
+/* General styling */
+body {
+    font-family: 'Arial', sans-serif;
+  }
+header{
+    background-color: RGB(15, 23, 42);
+    margin: 3%;
+    margin-top: 0%;
+    
+    
+  }
+
+ /* General Styles */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #1E293B;
+
+
+}
+
+.left-nav {
+  display: flex;
+  align-items: center;
+}
+
+.left-nav h1 {
+  color: white;
+  margin-left: 10px;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  display: flex;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: white;
+}
+
+.menu-items {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  align-items: center;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+.Nav-btn {
+  padding: 8px 12px;
+  border-radius: 5px;
+  border: 2px solid white;
+}
+
+.login-btn {
+  background-color: #fff;
+  color: #0F172A;
+}
+
+.logout-btn {
+  background-color: #0F172A;
+  color: white;
+  cursor: pointer;
+}
+
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Media Query for Mobile Devices */
+@media (max-width: 768px) {
+  .menu-toggle {
+      display: block;
+  }
+
+  
+
+  nav ul {
+    align-items: normal;
+  }
+  
+
+  .menu-items {
+      display: none;
+      flex-direction: column;
+      height: 200px;
+      align-items: flex-start;
+      background-color: #1E293B; /* Same as the nav background color */
+      position: absolute;
+      top: 113px; /* Adjust based on your logo and header height */
+      z-index: 1;
+      margin-top: 1%;
+      width: 100%;
+      margin-right: 3%;
+      left: 4.5%;
+      width: 91%;
+      
+     
+  }
+
+  nav ul {
+      flex-direction: column;
+      width: 100%;
+      padding: 0;
+      margin: 0;
+  }
+
+  nav ul li {
+      width: 100%;
+      text-align: left;
+      margin: 4px 0;
+      padding: 4px  8px;
+  }
+
+  .menu-items.active {
+      display: flex;
+  }
+}
+
+/* Hero Section */
+.hero {
+  margin-left: 4%;
+ 
+}
+
+.hero h1 {
+  color: white;
+  margin-left: 5%;
+}
+
+.carousel-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  background-color: #0F172A;
+  padding: 20px 0; /* Adds padding above and below the carousel */
+}
+
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+
+.arrow:hover {
+  background-color: #1E293B;
+  cursor: pointer;
+}
+
+.left-arrow {
+  left: 0;
+  margin-left: 1%;
+}
+
+.right-arrow {
+  right: 0;
+  margin-right: 4%;
+}
+
+.arrow img {
+  width: 30px;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.arrow img:hover {
+  transform: scale(1.1);
+}
+
+.carousel {
+  display: flex;
+  gap: 8px;
+  justify-content: center; /* Centers the cards horizontally */
+  overflow: hidden;
+}
+
+.post {
+  background-color: #0F172A;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  color: white;
+  border: #2c2f33 solid 4px;
+  border-radius: 10px;
+  flex: 0 0 30%;
+  height: 400px; /* Uniform height */
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.5s ease;
+}
+
+.post:hover {
+  transform: translateY(-5px);
+}
+
+.imageArticleContainer {
+  width: 100%;
+  overflow: hidden;
+  flex-grow: 1; /* Maintains its flexible size but less priority than title */
+}
+
+.post-image {
+  width: 100%;
+  height: auto;
+  max-height: 150px; /* Reduced max height to allocate more space to title */
+}
+
+.post-title {
+  font-size: 1.2em;
+  padding: 10px; /* Padding added for better spacing */
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex-grow: 2; /* Gives double the growth space compared to the image container */
+}
+
+.post-date {
+  font-size: 0.9em;
+  margin: 10px;
+  text-align: center;
+}
+
+
+  
+  
+  
+  /* Add responsiveness */
+  @media (max-width: 768px) {
+    .post{
+      width: 40%;
+      height: max-content;
+      align-items: center;
+
+    }
+   
+    .post-image {
+      width: 100%;
+      height: 150px;
+      display: block;
+      overflow: hidden;
+     
+      
+    }
+    .imageArticleContainer{
+     
+      align-items: center;
+    }
+    .post-date , .post-title, .post-summary{
+      font-size: 0.5em;
+    }
+    .right-arrow {
+      margin-right: auto;
+      margin-left: 4%; /* Adjust as needed */
+    }
+    .carousel{
+      align-items: start;
+    }
+      
+
+
+  }
+  
+
+/*main styles*/
+.filter-btn{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 20px;
+
+}
+.newest-btn, .oldest-btn{
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+  cursor: pointer;
+}
+  .post-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Creates 4 columns */
+    grid-template-rows: repeat(4, auto); /* Creates 3 rows with automatic row height */
+    gap: 20px;
+    padding: 10px; 
+    margin-left: 9%;
+    margin: 9%;/* Adjust padding to match your design */ /* Add padding as per your design's spacing */
+    margin-bottom: 2%;
+    margin-top: 2px;
+  }
+  
+  .grid-post {
+    background-color: #f2f2f2; /* Dark background from the design */
+    border-radius: 5px;
+    overflow: hidden;
+    color: rgba(15, 23, 42) /* Text color for readability on dark background */
+  }
+  .grid-post:hover{
+    cursor: pointer;
+    background-color:#0F172A;
+    color: #fff;
+  }
+  
+  .grid-post-image {
+    width: 100%;
+    display: block; /* Removes bottom space under the image */
+  }
+  
+  .grid-post-content {
+    padding: 10px;
+  }
+  
+  .grid-post-date {
+    font-size: 0.8em;
+  }
+  
+  .grid-post-title {
+    font-size: 1em;
+    margin: 10px 0;
+  }
+  
+  .grid-post-summary {
+    font-size: 0.9em;
+  }
+  .view-more {
+    color: white;
+    background-color: #0F172A;
+    margin-bottom: 4%;
+    margin-left: 50%;
+    transform: translateX(-50%); 
+    padding: 10px 30px; 
+    box-sizing: border-box; 
+    text-align: center;
+    display: inline-block; 
+    border: none; 
+    cursor: pointer; 
+  }
+  
+  .view-more:hover{
+    background-color: #1E293B;
+    cursor: pointer;
+  }
+  
+  /* Add responsiveness */
+  @media (max-width: 768px) {
+    .post-grid {
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    }
+  }
+   
+  /* Footer styling */
+  .Footer-logo{
+    width: 80px; 
+    height: 80px; 
+    border-radius: 40%; 
+    overflow: hidden; 
+    display: flex; 
+    margin-left: 38%;
+    background-color: #ddd;
+  }
+
+  .Footer-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+
+  footer {
+    background-color: rgba(15, 23, 42);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    margin: 3%;
+  }
+  
+  .social-links {
+    padding: 0;
+    gap: 20px;
+  }
+  
+  .social-links li {
+    display: inline;
+    margin: 0 10px;
+   
+  }
+  
+  .social-links img {
+    width: 24px;
+    height: auto;
+  }
+  
+  .footer-content p {
+    font-size: 0.8em;
+    color: #fff;
+  }
+  .footer-content h3{
+    color: white;
+  }
+  /*Register page*/
+
+ /*footer mobil media query */
+
+
+
+/*Register page Style */
+ 
+  .signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust the height as needed */
+    background-color: #0F172A; /* Background color of the whole page */
+  }
+  
+  .signup-form {
+    background: white;
+    padding: 40px;
+    border-radius: 5px;
+    width: 340px; /* Adjust the width as needed */
+  }
+  
+  .signup-form h2 {
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .signup-form p {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .signup-form .signin-link {
+    color: #2563eb; /* Adjust the color as needed */
+    text-decoration: none;
+  }
+  
+  .signup-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .signup-form .signup-btn {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #0F172A; /* Button color */
+    color: white;
+    cursor: pointer;
+  }
+  
+  .signup-form .signup-btn:hover {
+    background-color: #1E293B; /* Button hover color */
+  }
+  .loginOrRegisterBtn{
+
+    background-color: #0F172A;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+
+}
+  .loginOrRegisterBtn:hover{
+    background-color: #1E293B;
+  }
+ 
+
+
+
+  .hidden{
+    display: none;
+  }
+
+ /*footer mobil media query */
+
+  @media (max-width: 768px) {
+    .Footer-logo{ 
+      margin-left: 10%;
+    }
+
+  }
+
+
+ /*Register page*/
+/*mobile devices 768 px and below*/
+@media screen and (max-width: 768px) {
+  .signup-form {
+      width: 80%;
+  }
+
+
+}
+
+
+
+
+/*ViewmoreHtml style code */
+
+.main-ViewMore{
+  padding: 20px;
+ 
+}
+.SearchForm{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+#search{
+  width: 50%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+} 
