@@ -12,5 +12,7 @@ However, the plan and roadmap of the project are available in one of my public r
 
 
 
-#Link of the deployed project: 
+#Deployed Project Issue: 
+
+
 https://6655da688a0d101f856e553e--chipper-madeleine-a22f07.netlify.app/
