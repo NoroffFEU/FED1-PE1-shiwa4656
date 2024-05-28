@@ -11,8 +11,8 @@ However, the plan and roadmap of the project are available in one of my public r
 [Link to the project planning](https://github.com/users/shiwa4656/projects/10/views/1)
 
 
+# Deployed Project
 
-Deployed Project Issue
-
+[Link to the deployed project on Netlify](https://6655da688a0d101f856e553e--chipper-madeleine-a22f07.netlify.app/)
 
 https://6655da688a0d101f856e553e--chipper-madeleine-a22f07.netlify.app/
