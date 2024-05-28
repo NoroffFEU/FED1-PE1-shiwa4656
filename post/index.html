@@ -7,29 +7,32 @@
     <link rel="icon" type="image/png" href="../pictures/RealBlogLogo.png">
     <link rel="stylesheet" href="../styles.css">
     <style>
-        .signup-container {
+        .signup-containerP {
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
+           
         }
-        .signup-form {
+        .signup-formP {
             width: 50%;
             padding: 20px;
             border: 1px solid #ccc;
             border-radius: 5px;
+            background-color: #fff;
         }
-        .signup-form h2 {
+        .signup-formP h2 {
             text-align: center;
+            color: white;
         }
-        .signup-form input, .signup-form textarea {
+        .signup-formP input, .signup-formP textarea {
             width: 100%;
             margin: 10px 0;
             padding: 10px;
             border: 1px solid #ccc;
             border-radius: 5px;
         }
-        .signup-form button {
+        .signup-formP button {
             width: 100%;
             padding: 10px;
             border: none;
@@ -39,17 +42,17 @@
             cursor: pointer;
         }
         /* make the text area a lttle bigger for around 200 words' content */
-        .signup-form textarea {
+        .signup-formP textarea {
             height: 200px;
         }
 
         /*mobile screen*/
         @media screen and (max-width: 600px) {
-            .signup-form {
+            .signup-formP {
                 width: 80%;
             }
 
-            .signup-form textarea {
+            .signup-formP textarea {
                 height: 100px;
             }
 
@@ -72,12 +75,11 @@
             <ul>
                 <li><a href="../index.html">Blog</a></li>
                 <li><a href="../about.html">About</a></li>
-                <li><a onclick="signOut()" class="Nav-btn logout-btn" id="logout-btn">SIGN OUT</a></li>
             </ul>
         </div>
     </nav>
-        <div class="signup-container">
-            <div class="signup-form">
+        <div class="signup-containerP">
+            <div class="signup-formP">
               <h2>New Post</h2>
               <form onsubmit="create(event)" id="register-form">
                 <input type="text" id="title" name="title" placeholder="Title" required>
