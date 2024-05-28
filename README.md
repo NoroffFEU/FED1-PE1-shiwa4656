@@ -2,7 +2,10 @@
 
 Use this file to describe your project.
 
-#Project planning
-I have faced a problem regarding on the repositry i coded my project, initially i  did not use the class room github repositry, thus which means my project was designed in another way, and i do not know but i could not link it up here. However, the plan and the roadmap of the project is on one of my public repositry, here is the the link of the projoct. 
+# Project Planning Issue
 
-Link to the planning projects =
+I encountered an issue with the repository used for coding my project. Initially, I did not utilize the classroom GitHub repository, which resulted in my project being structured differently. As a consequence, I am unable to link it properly to the designated repository.
+
+However, the plan and roadmap of the project are available in one of my public repositories. You can access it through the following link: https://github.com/users/shiwa4656/projects/10/views/4
+
+[Link to the project planning](https://github.com/users/shiwa4656/projects/10/views/1)
