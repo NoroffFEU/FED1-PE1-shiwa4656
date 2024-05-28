@@ -266,18 +266,7 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 });
 
-const latestNews = "Latest posts";
-const LaPost = document.getElementById("LatestNews");
-let count = 0;
-let interval = setInterval(() => {
-  if (count === latestNews.length) {
-    count = 0;
-    LaPost.innerHTML = "";
-  } else {
-    LaPost.innerHTML += latestNews.charAt(count);
-    count++;
-  }
-}, 200);
+
 
 function signOut() {
   localStorage.removeItem("token");
