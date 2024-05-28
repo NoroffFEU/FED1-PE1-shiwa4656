@@ -9,3 +9,10 @@ I encountered an issue with the repository used for coding my project. Initially
 However, the plan and roadmap of the project are available in one of my public repositories. You can access it through the following link: https://github.com/users/shiwa4656/projects/10/views/4
 
 [Link to the project planning](https://github.com/users/shiwa4656/projects/10/views/1)
+
+
+# Deployed Project
+
+[Link to the deployed project on Netlify](https://6655da688a0d101f856e553e--chipper-madeleine-a22f07.netlify.app/)
+
+https://6655da688a0d101f856e553e--chipper-madeleine-a22f07.netlify.app/
