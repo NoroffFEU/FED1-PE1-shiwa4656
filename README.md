@@ -13,4 +13,4 @@ However, the plan and roadmap of the project are available in one of my public r
 
 # Deployed Project LInk, Please click the link below to see the live project
 
-https://6656256ce8a0d278e927c92b--chipper-madeleine-a22f07.netlify.app/
+https://665628dfad64be6d0dc5ef4f--chipper-madeleine-a22f07.netlify.app/
