@@ -41,12 +41,12 @@ window.onload = function() {
     } else {
         document.querySelector(".edit-post-btn").style.display = "none";
         document.querySelector("#logout-btn").style.display = "none";
-        document.querySelector(".Delete-btn").style.display = "none";
+        document.querySelector(".Delete-btnD").style.display = "none";
     }
   
     // Add event listener to the delete button
     // Add event listener to the delete button
-        document.querySelector(".Delete-btn").addEventListener("click", function(){
+        document.querySelector(".Delete-btnD").addEventListener("click", function(){
             if (confirm("Are you sure you want to delete this post?")) {
                 fetch("https://v2.api.noroff.dev/blog/posts/shirwac/" + id, {
                     method: 'DELETE',
