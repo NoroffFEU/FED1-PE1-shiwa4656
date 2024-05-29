@@ -14,3 +14,8 @@ However, the plan and roadmap of the project are available in one of my public r
 # Deployed Project LInk, Please click the link below to see the live project
 
 https://665628dfad64be6d0dc5ef4f--chipper-madeleine-a22f07.netlify.app/
+
+
+Email = shiabd38369@stud.noroff.no
+
+Passowrd =12345678
