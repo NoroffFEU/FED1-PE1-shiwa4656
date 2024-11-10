@@ -13,7 +13,7 @@ However, the plan and roadmap of the project are available in one of my public r
 
 # Deployed Project LInk, Please click the link below to see the live project
 
-https://665628dfad64be6d0dc5ef4f--chipper-madeleine-a22f07.netlify.app/
+https://blogtechpost.netlify.app/
 
 
 Email = shiabd38369@stud.noroff.no
@@ -57,7 +57,7 @@ Go to index.html page, then run the code through live server or other appropriat
 
 ### Project live, check the porject here on live
 
-https://665628dfad64be6d0dc5ef4f--chipper-madeleine-a22f07.netlify.app/
+https://blogtechpost.netlify.app/
 
 # Email and password to act as the owner
 
